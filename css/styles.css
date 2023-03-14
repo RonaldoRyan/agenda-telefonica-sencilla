@@ -1,0 +1,93 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #323131a0;
+  color: #444444;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+header {
+  background-color: #eeb44f;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: black;
+  margin: 0;
+  font-size: 28px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Estilos del formulario */
+.form-group label {
+  font-weight: bold;
+}
+
+.form-control {
+  border-radius: 0;
+  border: none;
+  border-bottom: 2px solid #0e0e0ed9;
+  box-shadow: none;
+}
+
+.form-control:focus {
+  border-color: #eeb44f;
+  box-shadow: none;
+}
+
+.btn-primary {
+  background-color: #eeb44f;
+  border-color: #eeb44f;
+  border-radius: 0;
+}
+
+/* Estilos de la lista de contactos */
+.list-group {
+  margin-top: 50px;
+}
+
+.list-group-item {
+  border: none;
+  padding: 20px;
+  background-color: #ffffffc2;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.list-group-item h5 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #444444;
+}
+
+.list-group-item p {
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.btnRemove {
+  display: inline-block;
+  color: #ffffff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+.btnRemove:hover {
+  background-color: #c82333;
+  border-color: #bd2130;
+}

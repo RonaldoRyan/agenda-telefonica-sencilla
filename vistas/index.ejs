@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Agendar Contactos</title>
+  </head>
+  <body>
+    <header>
+      <h1>Agenda de Contactos (JS, Node, Express, MySQL)</h1>
+    </header>
+    <div class="container mt-5">
+      <form>
+        <div class="form-group">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="name" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label for="telefono">Número de Teléfono:</label>
+          <input type="text" id="phone" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label for="direccion">Dirección:</label>
+          <input type="text" id="adress" name="direccion" class="form-control" />
+        </div>
+        <input type="button" value="Agregar" id="btnAgregar" class="btn btn-primary" />
+      </form>
+    </div>
+
+    <div class="container mt-5">
+      <ul class="list-group">
+        <% contactos.forEach((contacto) => { %>
+        <li class="list-group-item">
+          <div id="contact">
+            <h5><%= `${contacto.name} ` %></h5>
+            <p><%= `Número de Teléfono: ${contacto.phone_number}` %></p>
+            <p><%= `Dirección: ${contacto.adress}` %></p>
+            <span id="<%= contacto.idContacto %>" class="btnRemove btn btn-danger mb-1 ml-1">
+              <i class="fa fa-trash"></i>
+            </span>
+          </div>
+        </li>
+        <% }) %>
+      </ul>
+    </div>
+
+    <script type="text/javascript" src="funciones.js"></script>
+  </body>
+</html>

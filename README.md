@@ -1,5 +1,5 @@
 # agenda-telefonica-sencilla
-agenda telefonica sumamente sencilla creada con el framework de Node.js y usando MySQL como BD
+agenda telefonica sumamente sencilla creada con el framework Express.js y usando MySQL como BD
 
 
 Nombre del Proyecto:
